@@ -1,450 +1,971 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
-}
-body{
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    position : fixed;
-    overflow : hidden;
-    top: 0%;
+  }
+  
+  body, html {
     width: 100%;
-    background-color: rgb(9, 102, 102);
-    color: white;
-    z-index : 1;
-}
-ul {
+    height: 100%;
+  }
+  
+
+  .nav {
+    height: 70px;
+    background: rgb(9, 102, 102);
     display: flex;
-}
-ul li{
-    list-style : none;
-}
-
-.contact-btn{
-    font-family : Poppins;
-    background-color : white;
-    border : 1.5px solid white;
-    border-radius : 20px;
-    width : 150px;
-    height : 35px;
-    margin-inline : 10px;
-    font-size: 15px;
-    color:rgb(9, 102, 102);
-    cursor : pointer;
-    font-weight : bold;
-    transition : all .3s ease;
-}
-.contact-btn:hover{
-    background-color : transparent;
-    color : white;
-    font-weight : normal;
-}
-.nav-btn{
-    font-family : Poppins;
-    background-color : transparent;
-    border : 1.5px solid white;
-    border-radius : 20px;
-    width : 150px;
-    height : 35px;
-    margin-inline : 10px;
-    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo h1 {
     color: white;
-    cursor : pointer;
-    transition : all .3s ease;
-}
-.nav-btn:hover{
-    color :rgb(9, 102, 102);
-    background-color : white;
-    box-shadow : 5px 10px grey;
+  }
+  
+  .menu-btn button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn button:hover {
+    background: white;
+    color: black;
+    box-shadow: 4px 4px gray;
+  }
+  
 
-    font-weight : bold;
-}
-
-.logo{
-    font-weight : bold;
-    font-size : 20px;
-    cursor : pointer;
-}
-.search-bar{
-    position : relative;
-    bottom :2px;
-    left : 200px;
-}
-.in-box{
-    width : 500px;
-    border-radius : 250px;
-    border : none;
-    height : 35px;
-    padding  : 0 10px;
-    background : transparent;
-    border : 1.5px solid white;
-    color : white;
-    transition : all .3s ease;
-}
-.in-box:hover{
-    background : #efefef55;
-    box-shadow : 4px 5px rgba(0, 0, 0, 0.391);
-
-}
-
-.search-btn{
-    
-    position : relative;
-    background : transparent;
-    width : 50px;
-    height : 36px;
-    border : 1.5px solid white;
-    border-radius : 20px;
-    right : 55px;
-    top : 5px;
-    cursor : pointer;
-    transition : all .3s ease;
-}
-.search-btn:hover{
-    background : white;
-}
-.search-img{
-    width : 25px;
-    height : 25px;
-}
-.main{
+  .search-box {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: rgb(15, 128, 128);
+  }
+  
+  .in-box {
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 20px;
+  }
+  
+  .in-box::placeholder {
+    padding-left: 10px;
+  }
+  
+  .search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
     color: white;
-    padding: 8px;
-    height: 600px;
-    margin-top: 55px;
-}
+    margin-left: -40px;
+  }
+  
 
-.mainText h1{
-    font-size: 55px;
-}
+  .show-box {
+    height: calc(100vh - 70px);
+    background: rgb(15, 128, 128);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .slogan {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slogan h1 {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .slogan h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .show-box button {
+    font-size: 16px;
+    color: black;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .show-box button:hover {
+    color: white;
+    border: 1px solid white;
+    background: transparent;
+  }
+  
 
-.mainText h3{
-    font-size: 35px;
-    margin-top: 12px;
-}
-.mainText button{
-    font-family : Outfit;
-    padding : 10px 20px;
-    border : none;
-    border-radius: 40px;
-    margin-top: 22px;
+  .hospital-list {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .hospital-list h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    margin: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .view {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .view:hover {
     background-color: white;
     color: black;
-    font-size: 19px;
-    cursor : pointer;
-    transition : all .3s ease;
-
-}
-.mainText button:hover{
-    background : transparent;
-    border : 1px solid white;
-    color : white;
-}
-.hos-main{
-    width : 300px;
-}
-
-.hos-img{
-    position : absolute;
-    bottom : 275px;
-    right : 100px;
-    height : 550px;
-}
-.cal-img{
-    width : 90px;
-    position : relative;
-    left :80px;
-    top : 50px;
-
-}
-.list{
-    width : 300px;
-    height : 300px;
-    background-color : rgba(131, 125, 125, 0.133);
-}
-.hospital-list{
-    height : 140vh;
-}
-.hospital-list h1{
-    text-align : center;
-    margin-top : 20px;
-    margin-bottom : 60px;
-}
-.teams{
-
-    display : flex;
-    justify-content : space-around;
-    height : 600px;
-    background-color:#efefef;
-}
-
-.card{
-    width: 300px;
-    height: 500px;
-    background-color: #fff;
-    margin-inline: 20px;
-    margin-top: 22px;
-    border : 1px solid gray;
-    border-radius : 15px;
-
-}
-.card img{
-    width: 100%;
-    height: 100%;
-}
-.card p{
-    margin-top: 11px;
-    margin-left: 11px;
-}
-.view{
-    font-family : Arial, Helvetica, sans-serif;
-    position : relative;
-    left : 80px;
-    top : 30px;
-    padding : 12px 50px;
-    border : none;
-    border-radius : 25px;
-    background-color : black;
-    color : white;
-    font-weight : bold;
-    font-size : 13px;
-    cursor : pointer;
-    transition : all .2s ease;
-
-}
-.view-more{
-    font-family : Arial, Helvetica, sans-serif;
-    position : relative;
-    left : 900px;
-    bottom : 50px;
-    padding : 12px 50px;
-    border : 1px solid black;
-    border-radius : 25px;
-    background-color : transparent;
-    color : black;
-    font-weight : bold;
-    font-size : 13px;
-    cursor : pointer;
-    transition : all .2s ease;
-}
-.view:hover{
-    background : transparent;
-    color : black;
-    border : 1px solid black;
-}
-.view-more:hover{
-    color : white;
-    background : black;
-}
-
-.slider{
-    min-height : 60vh;
-    display : flex;
-    align-items : center;
-    justify-content : center;
-    background-color: rgba(9, 102, 102, 0.754);
-    flex-direction : column;
-}
-.slider h1{
-    color : white;
-    margin-top : 20px;
-
-}
-.slide-container{
-    width : 100%;
-    padding : 40px 0;
-    display : flex;
-    justify-content : space-around;
-}
-.slide-content{
-    margin : 0 40px;
-}
-.image-content,
-.card-content{
-       padding : 40px 14px;
-       display : flex;
-       flex-direction : column; 
-       align-items : center; 
-       
-}
-.image-content{
-    position : relative;
-    row-gap : 5px;
-    padding : 25px 0;
-    
-}
-.overlay{
-    position : absolute;
-    height : 100%;
-    width : 100%;
-    background-color :rgb(6, 67, 67);
-    border-radius : 25px 25px 0 25px;
-}
-.cards{
-    position : relative;
-    right : 40px;
-    width : 320px;
-    border-radius : 25px;
-    background-color : #fff;
-}
-.card-img{
-    position : relative;
-    height : 150px;
-    width : 150px;
-    border-radius : 50%; 
-    background: #fff;
-    padding:3px;
-    margin-top : 30px;
-}
-.card-image .card-img{
-    height : 100%;
-    width : 100%;
-    object-fit : cover;
-    border-radius : 50%;
-    border : 4px solid #4070f4;
-}
-.name{
-    font-size : 18px;
-    font-weight : 500;
-    color : #333;
-}
-.description{
-    font-size : 14px;
-    color : #707070;
-    text-align : center;
-}
-.appoint-btn{
-    border : none;
-    font-size : 16px;
-    background-color :rgb(6, 51, 51);
-    color : #fff;
-    padding : 8px 16px;
-    border-radius : 6px;
-    margin : 14px;
-    cursor : pointer;
-    transition : all 0.3s ease; 
-}
-.appoint-btn:hover{
-    background : transparent;
-    color :rgb(6, 51, 51);
-    border : 1px solid darkgreen;
-}
-.head{
+    border: 1px solid black;
+  }
+  
+  
+  .slider {
+    padding: 40px 0;
+    background-color: rgba(9, 102, 102, 0.75);
     text-align: center;
-    padding: 40px;
-}
-
-.surgery{
+  }
+  
+  .slider h1 {
+    color: white;
+    margin-bottom: 40px;
+  }
+  
+  .slide-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color : #efefef;
-    height : 385px;
-}
-.surgeryCard{
-    text-align: center;
-    width: 300px;
-    height : 300px;
-    background-color: white;
-    margin-inline: 20px;
-    padding: 20px;
-    margin-top: 22px;
-    border-radius : 20px;
-    transition : all .3s ease;
-}
-.surgeryCard:hover,
-.surgerycard img:hover{
-    filter : invert(100%);
-}
-.surgeryCard img{
-    width: 100px;
-
-}
-
-.surgeryCard p{
-    margin-top: 12px;
-}
-#patient{
-    height : 90vh;
-    background :rgba(9, 102, 102, 0.688);
-    color : white;
-}
-.patients{
-    width: 100%;
-    height: 700px;
-    position: relative;
+  }
+  
+  .cards {
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 15px;
     overflow: hidden;
-    margin: auto;
-
-}
-.patientCard{
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: all 1s ease;
-}
-.patientCard img{
-     width:100%;
-     margin-inline: 11px;
-     border-radius: 5px;
-     
-}
- 
-.contact{
-    width: 300px;
-    background-color: #fff;
-    padding: 40px;
-    margin: auto;
     text-align: center;
-    border-radius: 5px;
-}
-.contact h1{
-    
-    color: rgb(9, 77, 77);
-}
-.contact input{
-    width: 90%;
-    padding: 9px;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: #e2e2e2;
-    border-radius: 2px;
+    width: 280px;
+  }
+  
+  .card-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-top: 20px;
-}
-.contact button{
-    width: 90px;
-    height: 30px;
-    margin-top: 23px;
-    background-color: rgb(12, 95, 95);
-    color: white;
-    font-size: 17px;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #707070;
+    margin: 10px 20px;
+  }
+  
+  .appoint-btn {
     border: none;
-}
-.footer{
+    padding: 12px 40px;
+    margin: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .appoint-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+
+  #speciality {
+    padding: 40px 0;
+    background: #efefef;
+    text-align: center;
+  }
+  
+  #speciality h1 {
+    margin-bottom: 40px;
+  }
+  
+  .surgery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 66px;
+    justify-content: center;
+  }
+  
+  .surgeryCard {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .surgeryCard img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .surgeryCard p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+
+  #patient {
+    padding: 40px 0;
+  }
+  
+  .patients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .patientCard {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .patientCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+
+  #contact {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #contact h1 {
+    margin-bottom: 20px;
+  }
+  
+  #contact input {
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+  }
+  
+  #connectBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border: none;
+    background-color: black;
     color: white;
-    margin-top: 66px;
-    background-color: rgb(6, 51, 51);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  #connectBtn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
 
-}
-.text p{
-    margin-top: 12px;
-}
+  .footer {
+    padding: 40px;
+    background-color: rgb(9, 102, 102);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer h3 {
+    margin-bottom: 15px;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  .cal-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+  }
+  
 
+  .show-box-img img {
+    width: 600px;
+    height: 600px;
+  }
+
+.nav {
+    height: 70px;
+    background: rgb(9, 102, 102);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+  }
+  
+
+  .logo h1 {
+    color: white;
+    font-size: 24px;
+  }
+  
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .in-box {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 0 20px;
+  }
+  
+  .search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    margin-left: -40px;
+    font-size: 18px;
+  }
+  
+  
+  .menu-btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-btn button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn button:hover {
+    background: white;
+    color: black;
+    box-shadow: 4px 4px gray;
+  }
+  
+.hospital-list {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .hospital-list h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+
+  .card {
+    width: 350px;
+    height: 450px; 
+    margin: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .card img {
+    width: 100%;
+    height: 50%; 
+    object-fit: cover;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .view {
+    display: block;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 12px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .view:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+.hospital-list {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .hospital-list h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  
+  .card {
+    width: 350px;
+    min-height: 500px; 
+    margin: 15px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover;
+  }
+  
+  .card p {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .view {
+    display: block;
+    width: 80%;
+    padding: 12px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .view:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  
+.show-box button {
+    font-size: 18px;
+    color: white;
+    width: 280px;
+    height: 60px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #06A77D, #17B978);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .show-box button:hover {
+    background: linear-gradient(135deg, #17B978, #06A77D);
+    color: #fff;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); 
+  }
+  
+#patient {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #patient .head h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider-review {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .review-card {
+    min-width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .review-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  
+  #prev-review-btn, #next-review-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  #prev-review-btn {
+    left: 10px;
+  }
+  
+  #next-review-btn {
+    right: 10px;
+  }
+  
+  #prev-review-btn:hover, #next-review-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+
+  @media (max-width: 1200px) {
+    .show-box button {
+      width: 260px;
+      height: 55px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .show-box button {
+      width: 240px;
+      height: 50px;
+      font-size: 15px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .show-box button {
+      width: 220px;
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+  
+  
+
+  
+  @media (max-width: 1200px) {
+    .card {
+      width: 320px;
+      min-height: 480px;
+    }
+  
+    .card img {
+      height: 200px; 
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 280px;
+      min-height: 450px;
+    }
+  
+    .card img {
+      height: 180px;
+    }
+  
+    .view {
+      width: 90%;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      min-height: 400px; 
+      margin: 10px;
+    }
+  
+    .card img {
+      height: 160px; 
+    }
+  
+    .view {
+      width: 100%;
+    }
+  }
+  
+  
+  
+  
+  
+  @media (max-width: 1200px) {
+    .card {
+      width: 320px;
+      height: 500px; 
+    }
+  
+    .card img {
+      height: 45%;
+    }
+  
+    .view {
+      margin-bottom: 15px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 280px;
+      height: 380px; 
+    }
+  
+    .card img {
+      height: 50%;
+    }
+  
+    .view {
+      width: 90%;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      height: 500px; 
+      margin: 10px;
+    }
+  
+    .card img {
+      height: 40%;
+    }
+  
+    .view {
+      width: 40%;
+    }
+  }
+  
+  
+  
+  
+
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .search-box {
+      order: 2;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .in-box {
+      max-width: 90%;
+    }
+  
+    .menu-btn {
+      order: 3;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .menu-btn button {
+      width: 90px;
+      margin-bottom: 5px;
+      padding: 8px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .logo h1 {
+      font-size: 18px;
+    }
+  
+    .search-box {
+      margin-bottom: 15px;
+    }
+  
+    .menu-btn button {
+      width: 100px;
+      padding: 6px;
+      font-size: 12px;
+    }
+  
+    .in-box {
+      max-width: 80%;
+    }
+  }
+  
+  
+  
+
+  @media (max-width: 768px) {
+    .cal-img {
+      width: 50px;
+      height: 50px;
+      margin-left: 50px;
+    }
+    .show-box-img img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  
+  @media (min-width: 1200px) {
+    .cal-img {
+      width: 150px;
+      height: 150px;
+      margin-left: 150px;
+    }
+    .show-box-img img {
+      width: 800px;
+      height: 800px;
+    }
+  }
+
+  
+  @media (max-width: 1200px) {
+    .in-box {
+      width: 250px;
+    }
+  
+    .show-box {
+      flex-direction: column;
+    }
+  
+    .slogan h1 {
+      font-size: 40px;
+    }
+  
+    .slogan h2 {
+      font-size: 25px;
+    }
+  
+    .slider h1 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .in-box {
+      width: 200px;
+    }
+  
+    .slogan h1 {
+      font-size: 32px;
+    }
+  
+    .show-box button {
+      width: 200px;
+    }
+  
+    .teams, .slide-container, .surgery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card, .cards {
+      width: 90%;
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav {
+      padding: 10px;
+    }
+ 
+    .cal-img{
+        width : 100px;
+        object-fit : contain;
+    }
+    .logo h1 {
+      font-size: 24px;
+    }
+  
+    .menu-btn button {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  
+    .slogan h1 {
+      font-size: 24px;
+    }
+  
+    .slogan h2 {
+      font-size: 18px;
+    }
+  
+    .show-box button {
+      width: 180px;
+    }
+  
+    .view {
+      padding: 10px;
+    }
+  
+    .appoint-btn {
+      padding: 10px 30px;
+    }
+  }
+  
