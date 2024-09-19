@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPANKA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,53 +16,37 @@
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    
-    <script
-      src="https://kit.fontawesome.com/f30fac2c61.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <div class="logo">
-          <h1>SPANKA</h1>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><h1>SPANKA</h1>
         </div>
-        <div class="search-bar">
-          <input type="text" class="in-box"
-          placeholder="Search Hospital">
-          <button class="search-btn"><img src="images/search(1).png" alt="" class="search-img"></button>
-        </div>
-
-        <i id="bar" class="fa-solid fa-bars"></i>
-        <div class="menu">
-        <ul>
-          <li><button class="nav-btn">Home</button></li>
-          <li><button class="nav-btn">Hospital's</button></li>
-          <li><button class="nav-btn">Speciality's</button></li>
-          <li><button class="nav-btn">Patient Review's</button></li>
-          <li><button class="contact-btn">Contact Us</button></li>
-        </ul>
-      </div>
-      </nav>
-    
-      <div class="main">
-        <div class="mainText">
-          <h1>Special Path for <br />Aid Near Known Area</h1>
-          <br />
-          <h2>Best Hospital's</h2>
-          <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit</p> -->
-          <button class="get-ap-btn">Get your appointment now.</button>
-          <br />
-          <img class="cal-img" src="images/calendar.png" alt="" />
-        </div>
-        <div class="hos-main">
-          <img class="hos-img" src="/images/hospital.png" alt="" />
-        </div>
-      </div>
-
-      <div class="hospital-list">
+        <div class="search-box"><input type="text" class="in-box" placeholder="Search for Hospital's or Specialist">
+        <button class="search-btn"><i class="ri-search-line"></i></button>
+    </div>
+    <div class="menu-btn">
+        <button>Home</button>
+        <button>Hospital</button>
+        <button>Speciality's</button>
+        <button>Patient Review</button>
+        <button>Contact Us</button>
+    </div>
+    </div>
+    <div class="show-box">
+        <div class="slogan"><h1>Special Path for<br> Aid Near Known Area</h1>
+            <h2>Best Hospital</h2>
+        <button>Get your appointment now</button>
+        <img src="images/calendar.png" alt="" class="cal-img">
+    </div>
+    <div class="show-box-img"><img src="images/hospital.png" alt=""></div>
+</div>
+</div>
+    <div class="hospital-list">
         <h1>Hospital's List</h1>
         <div class="teams">
           <div class="card">
@@ -132,145 +116,118 @@
                 <button class="view">View</button>
               </div>
             </div>
-            <button class="view-more">View More</button>
-      </div>
-      <div class="slider">
-        <h1 class="headline-doc">Best Doctors From Best Hospital</h1>
-        <div class="slide-container">
-          <div class="slide-content">
-            <div class="card-wrapper">
-              <div class="cards">
-                <div class="image-content">
-                  <span class="overlay"></span>
-                  <div class="card-images">
-                    <img src="images/boy-doc.png" alt="" class="card-img" />
+            <div class="view-more-div"><button class="view-more">View More</button>
+            </div>
+
+ 
+            <div class="slider">
+                <h1 class="headline-doc">Best Doctors From Best Hospital</h1>
+                <div class="slide-container">
+                  <div class="slide-content">
+                    <div class="card-wrapper">
+                      <div class="cards">
+                        <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-images">
+                            <img src="images/boy-doc.png" alt="" class="card-img" />
+                          </div>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="name">Dr. David Dell</h2>
+                          <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Vel, sint! Quia itaque molestiae libero. Distinctio
+                            similique odit nulla eum ullam voluptatem.
+                          </p>
+                          <button class="appoint-btn">Appoint Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div><div class="card-wrapper">
+                    <div class="cards">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-images">
+                          <img src="images/girl-doc.png" alt="" class="card-img" />
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="name">Dr. David Dell</h2>
+                        <p class="description">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Vel, sint! Quia itaque molestiae libero. Distinctio
+                          similique odit nulla eum ullam voluptatem.
+                        </p>
+                        <button class="appoint-btn">Appoint Now</button>
+                      </div>
+                    </div>
                   </div>
+                  <div class="card-wrapper">
+                    <div class="cards">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-images">
+                          <img src="images/boy-doc.png" alt="" class="card-img" />
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="name">Dr. Alis</h2>
+                        <p class="description">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Vel, sint! Quia itaque molestiae libero. Distinctio
+                          similique odit nulla eum ullam voluptatem.
+                        </p>
+                        <button class="appoint-btn">Appoint Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-wrapper">
+                    <div class="cards">
+                      <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-images">
+                          <img src="images/girl-doc.png" alt="" class="card-img" />
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <h2 class="name">Dr. Alis</h2>
+                        <p class="description">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                          Vel, sint! Quia itaque molestiae libero. Distinctio
+                          similique odit nulla eum ullam voluptatem.
+                        </p>
+                        <button class="appoint-btn">Appoint Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div class="card-content">
-                  <h2 class="name">Dr. David Dell</h2>
-                  <p class="description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Vel, sint! Quia itaque molestiae libero. Distinctio
-                    similique odit nulla eum ullam voluptatem.
-                  </p>
-                  <button class="appoint-btn">Appoint Now</button>
-                </div>
-              </div>
-            </div>
-          </div><div class="card-wrapper">
-            <div class="cards">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-images">
-                  <img src="images/girl-doc.png" alt="" class="card-img" />
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">Dr. David Dell</h2>
-                <p class="description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Vel, sint! Quia itaque molestiae libero. Distinctio
-                  similique odit nulla eum ullam voluptatem.
-                </p>
-                <button class="appoint-btn">Appoint Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            <div class="cards">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-images">
-                  <img src="images/boy-doc.png" alt="" class="card-img" />
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">Dr. Alis</h2>
-                <p class="description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Vel, sint! Quia itaque molestiae libero. Distinctio
-                  similique odit nulla eum ullam voluptatem.
-                </p>
-                <button class="appoint-btn">Appoint Now</button>
-              </div>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            <div class="cards">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-images">
-                  <img src="images/girl-doc.png" alt="" class="card-img" />
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">Dr. Alis</h2>
-                <p class="description">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Vel, sint! Quia itaque molestiae libero. Distinctio
-                  similique odit nulla eum ullam voluptatem.
-                </p>
-                <button class="appoint-btn">Appoint Now</button>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-          </div>
-          </div>
-      <div id="speciality">
-        <div class="head">
-          <h1>Get Best Medics From Every Department</h1>
-        </div>
-        <div class="surgery">
-          <div class="surgeryCard">
-            <img src="/images/s1.png" alt="" />
-            <p>Succesfully Knee Surgery</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div class="surgeryCard">
-            <img src="/images/s2.png" alt="" />
-            <p>Succesfully Knee Surgery</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div class="surgeryCard">
-            <img src="/images/s3.png" alt="" />
-            <p>Succesfully Knee Surgery</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div class="surgeryCard">
-            <img src="/images/cardiology.png" alt="" />
-            <p>Succesfully Heart Surgery</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-          <div class="surgeryCard">
-            <img src="/images/medical-checkup.png" alt="" />
-            <p>Succesfully Heart Surgery</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          </div>
-        </div>
-      </div>
+                  </div>
+                  <div id="patient">
+                    <div class="head">
+                      <h1>Our Patient's Review</h1>
+                    </div>
+                    <div class="slider-container">
+                      <button id="prev-review-btn">Previous</button> 
+                      <div class="slider-review">
+                        <div class="review-card">
+                          <img src="images/p1.png" alt="Patient 1" />
+                          <p>Patient 1's review text goes here...</p>
+                        </div>
+                        <div class="review-card">
+                          <img src="images/p2.png" alt="Patient 2" />
+                          <p>Patient 2's review text goes here...</p>
+                        </div>
+                        <div class="review-card">
+                          <img src="images/p3.jpg" alt="Patient 3" />
+                          <p>Patient 3's review text goes here...</p>
+                        </div>
 
-      <div id="patient">
-        <div class="head">
-          <h1>Our Patient's Review</h1>
-        </div>
-        <div class="patients">
-          <div class="patientCard">
-            <img src="/images/p1.png" alt="" />
-            <img src="/images/p2.png" alt="" />
-          </div>
-          <div class="patientCard">
-            <img src="/images/p3.jpg" alt="" />
-            <img src="/images/p4.jpg" alt="" />
-          </div>
-          <div class="patientCard">
-            <img src="/images/p5.jpg" alt="" />
-            <img src="/images/p6.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-
+                      </div>
+                      <button id="next-review-btn">Next</button> 
+                    </div>
+                  </div>
+                  
       <div id="contact">
         <div class="head">
           <h1>Contact <span>Us</span></h1>
@@ -279,7 +236,7 @@
           <h1>Connect With Us</h1>
           <input type="text" placeholder="Enter Email" id="email" />
           <input type="password" placeholder="Enter Password" id="pass" />
-          <button id="connectBtn">Connect</button>
+          <button id="connectBtn">Sign Up</button>
         </div>
       </div>
 
@@ -306,7 +263,6 @@
           <p>Hospital</p>
         </div>
       </div>
-    </div>
-    <script src="main.js"></script>
-  </body>
+      <script src="script.js"></script>
+</body>
 </html>
