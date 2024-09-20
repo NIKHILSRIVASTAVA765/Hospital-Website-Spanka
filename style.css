@@ -75,7 +75,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 20px;
   }
   
@@ -359,10 +358,12 @@
   
 
   .show-box-img img {
-    width: 600px;
-    height: 600px;
+    width: 50vw;
+    height: 50vh;
   }
 
+  
+  
 .nav {
     height: 70px;
     background: rgb(9, 102, 102);
@@ -663,7 +664,19 @@
   #prev-review-btn:hover, #next-review-btn:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  
+  .search-btn i{
+    color : black;
+  }
+  .view-more{
+    background : transparent;
+    padding : 8px 10px;
+    border-radius : 50px;
+    border : 1px solid black;
+    color : black;
+    margin-bottom : 20px;
+    font-weight : bold;
+    cursor : pointer;
+  }
 
   @media (max-width: 1200px) {
     .show-box button {
@@ -721,26 +734,6 @@
   }
   
   
-  @media (max-width: 480px) {
-    .card {
-      width: 100%;
-      min-height: 400px; 
-      margin: 10px;
-    }
-  
-    .card img {
-      height: 160px; 
-    }
-  
-    .view {
-      width: 100%;
-    }
-  }
-  
-  
-  
-  
-  
   @media (max-width: 1200px) {
     .card {
       width: 320px;
@@ -776,16 +769,19 @@
   @media (max-width: 480px) {
     .card {
       width: 100%;
-      height: 500px; 
+      height: 400px; 
       margin: 10px;
     }
   
     .card img {
-      height: 40%;
+      height: 50%;
     }
   
     .view {
       width: 40%;
+    }
+    .list{
+      min-height : 100px;
     }
   }
   
@@ -837,15 +833,19 @@
     .search-box {
       margin-bottom: 15px;
     }
-  
+
     .menu-btn button {
-      width: 100px;
+      width : 35%;
       padding: 6px;
-      font-size: 12px;
+      font-size: 10px;
     }
   
     .in-box {
       max-width: 80%;
+    }
+    .in-box::placeholder{
+      font-size : 10px;
+      padding-left : 1px;
     }
   }
   
@@ -949,13 +949,17 @@
     }
   
     .slogan h1 {
-      font-size: 24px;
+      font-size: 35px;
+      text-align : center;
     }
   
     .slogan h2 {
-      font-size: 18px;
+      font-size: 30px;
+      text-align : center;
     }
-  
+    .slogan{
+      align-items : center;
+    }
     .show-box button {
       width: 180px;
     }
@@ -966,6 +970,12 @@
   
     .appoint-btn {
       padding: 10px 30px;
+    }
+    .slogan button{
+      width : 80%;
+    }
+    .cal-img{
+      margin-right : 40px;
     }
   }
   
